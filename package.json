@@ -23,6 +23,10 @@
   "homepage": "https://github.com/per-nilsson/ampersand-localstorage",
   "devDependencies": {
     "tape": "^3.0.0",
-    "browserify": "^5.12.1"
+    "browserify": "^5.12.1",
+    "eslint": "^0.8.2",
+    "ampersand-model": "^4.0.2",
+    "tap-spec": "^1.0.0",
+    "tape-run": "^0.3.0"
   }
 }
