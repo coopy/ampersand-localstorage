@@ -1,0 +1,28 @@
+{
+  "name": "ampersand-localstorage",
+  "version": "0.0.1",
+  "description": "localStorage #sync method replacement for ampersand-model and ampersand-rest-collection.",
+  "main": "ampersand-localstorage.js",
+  "scripts": {
+    "test": "browserify test/index.js | tape-run | tap-spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:per-nilsson/ampersand-localstorage.git"
+  },
+  "keywords": [
+    "ampersandjs",
+    "backbone",
+    "localstorage"
+  ],
+  "author": "Per Nilsson <per@sproutlab.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/per-nilsson/ampersand-localstorage/issues"
+  },
+  "homepage": "https://github.com/per-nilsson/ampersand-localstorage",
+  "devDependencies": {
+    "tape": "^3.0.0",
+    "browserify": "^5.12.1"
+  }
+}
