@@ -9,19 +9,24 @@
  *
  * Usage:
  * ```
- *     var Model = require('ampersand-model');
- *     var Localstorage = require('ampersand-localstorage');
+ *     var AmpersandLocalstorage = require('ampersand-localstorage');
+ *     var Model = require('ampersand-model').extend({
+ *         props: {
+ *             someProperty: 'string'
+ *         }
+ *     });
  *
- *     // Replaces `Model#sync` with `LocalStorage#localSync`.
+ *     // Replaces `Model.prototype.sync` with `AmpersandLocalstorage.localSync`.
  *     // Adds a `storage` object with internals.
  *     // Model objects will be stored under keys prefixed by "myModelName".
- *     LocalStorage.patch(Model, "myModelName");
+ *     AmpersandLocalstorage.patch(Model, "myModelName");
  *
  *     var model = new Model({ someProperty: 'someValue' });
- *     // Will save model to localStorage.
+ *
+ *     // Will save model to localStorage, setting `idAttribute` to a pseudo-GUID.
  *     model.save();
  *     // Will retrieve model from localStorage.
- * 	   model.fetch();
+ *     model.fetch();
  * ```
  */
 
